@@ -1,12 +1,12 @@
 //1====================================================
 function sum(x, y) {
   return(x+y);
-}
+};
 //2====================================================
 function isEqual(x, y) {
   if(x === y) return true;
   else return false;
-}
+};
 //3====================================================
 function discountPercentage(amount, discount) {
   if(discount > 100 || discount < 0) {
@@ -16,8 +16,7 @@ function discountPercentage(amount, discount) {
     totalDiscount = (amount*discount);
     console.log("The discount amount is: " + totalDiscount);
   }
-}
-discountPercentage(100, .1);
+};
 //4====================================================
 function stringCapitalize(input) {
   var result = "";
