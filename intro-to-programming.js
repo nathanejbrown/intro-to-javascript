@@ -65,7 +65,7 @@ for(x=1; x<51; x++) {
 console.log("==============");
 //multiples of 3 and 5 under 1000
 count = 0;
-for(x=0; x<=1000; x++) {
+for(x=0; x<1000; x++) {
   if(x%3 === 0 || x%5 === 0) {
     count += x;
   }
