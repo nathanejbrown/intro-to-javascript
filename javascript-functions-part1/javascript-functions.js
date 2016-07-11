@@ -17,15 +17,15 @@ function discountPercentage(amount, discount) {
   }
 }
 //4====================================================
-function stringCapitalize(input) {
+function stringCapitalize(stringToCapitalize) {
   var result = "";
-  for(x=0; x<input.length; x++) {
-    if(input[x-1] === " " || x === 0) {
-      var letter = input.charAt(x);
+  for(x=0; x<stringToCapitalize.length; x++) {
+    if(stringToCapitalize[x-1] === " " || x === 0) {
+      var letter = stringToCapitalize.charAt(x);
       letter = letter.toUpperCase();
       result += letter;
     }
-    else result += input[x];
+    else result += stringToCapitalize[x];
   }
   console.log(result);
 }
