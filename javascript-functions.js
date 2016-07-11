@@ -1,22 +1,21 @@
 //1====================================================
 function sum(x, y) {
   return(x+y);
-};
+}
 //2====================================================
 function isEqual(x, y) {
-  if(x === y) return true;
-  else return false;
-};
+  return(x === y);
+}
 //3====================================================
 function discountPercentage(amount, discount) {
   if(discount > 100 || discount < 0) {
-    console.log("The discount must be between .01 and 1");
+    console.log("The discount must be between 1% and 100%");
   }
   else {
-    totalDiscount = (amount*discount);
+    totalDiscount = (amount*(discount / 100));
     console.log("The discount amount is: " + totalDiscount);
   }
-};
+}
 //4====================================================
 function stringCapitalize(input) {
   var result = "";
@@ -29,7 +28,7 @@ function stringCapitalize(input) {
     else result += input[x];
   }
   console.log(result);
-};
+}
 //5====================================================
 function evenNumbers(n) {
   for(x=0; x<n; x++) {
@@ -37,13 +36,13 @@ function evenNumbers(n) {
       console.log(x);
     }
   }
-};
+}
 //6====================================================
 function isDivisible(x,y) {
   if(x%y === 0) {
     return true;
   } else return false;
-};
+}
 //7====================================================
 function oddNumbers(n) {
   if(n<0 || n>100) {
@@ -59,4 +58,4 @@ function oddNumbers(n) {
         console.log(x);
     }
   }
-};
+}
