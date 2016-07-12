@@ -45,17 +45,19 @@ function isDivisible(x,y) {
 }
 //7====================================================
 function oddNumbers(n) {
+  if(n <= 40) {
+    n = 40;
+    i = 1;
+  } else {
+    i = 41;
+  }
   if(n<0 || n>100) {
     console.log("Your number must be between 0-100");
   }
-  else if(n>40) {
-    for(x=41; x<n; x+=2) {
-        console.log(x);
-    }
-  }
   else {
-    for(x=1; x<40; x+=2) {
-        console.log(x);
-    }
+    do {
+        console.log(i);
+        i+=2;
+    } while (i<n);
   }
 }
